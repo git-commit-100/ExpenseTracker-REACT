@@ -1,9 +1,10 @@
-import ExpenseItem from './components/ExpenseItem';
+import Expenses from './components/Expenses';
+import './App.css'
 
 function App() {
   return (
     <div className="App">
-      <ExpenseItem></ExpenseItem>
+      <Expenses />
     </div>
   );
 }

@@ -1,0 +1,21 @@
+.date{
+    padding: .5rem 1rem;
+    border: 1px solid white;
+    border-radius: 16px;
+    color: white;
+    text-align: center;
+    background-color: #303030;
+}
+
+.date .date_month{
+    font-size: 14px;
+}
+
+.date .date_day{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.date .date_year{
+    font-size: 14px;
+}
