@@ -1,7 +1,7 @@
 import "./ExpenseForm.css";
 import { useState } from "react";
 
-function ExpenseForm() {
+function ExpenseForm(props) {
   //using state to store values of user input
   //unique state for every form field
   const [enteredTitle, setEnteredTitle] = useState("");
@@ -29,7 +29,14 @@ function ExpenseForm() {
       amount: enteredAmount,
       date: new Date(enteredDate),
     };
-    console.log(expenseData);
+
+    //traversing upwards
+    props.onSaveExpenseData(expenseData);
+
+    //clearing input fields
+    setEnteredTitle('');
+    setEnteredAmount('');
+    setEnteredDate('');
   }
 
   //attaching change in state listeners in JSX
@@ -42,6 +49,7 @@ function ExpenseForm() {
             type="text"
             id="title-input"
             required
+            value={enteredTitle}
             autoComplete="off"
             onChange={changeTitleHandler}
           />
@@ -54,6 +62,7 @@ function ExpenseForm() {
             step="0.01"
             id="amount-input"
             required
+            value={enteredAmount}
             autoComplete="off"
             onChange={changeAmountHandler}
           />
@@ -63,9 +72,10 @@ function ExpenseForm() {
           <input
             type="date"
             min="2019-01-01"
-            max="2022-01-01"
+            max="2022-12-31"
             id="date-input"
             required
+            value={enteredDate}
             autoComplete="off"
             onChange={changeDateHandler}
           />

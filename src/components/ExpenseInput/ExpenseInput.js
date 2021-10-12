@@ -1,12 +1,21 @@
-import ExpenseForm from './ExpenseForm';
-import './ExpenseInput.css';
+import ExpenseForm from "./ExpenseForm";
+import "./ExpenseInput.css";
 
-function ExpenseInput(){
-    return(
-        <div className='expense-input'>
-            <ExpenseForm />
-        </div>
-    );
+function ExpenseInput(props) {
+  const saveExpenseDataHandler = (expenseData) => {
+    const expenseObj = {
+      ...expenseData,
+      id: Math.random().toString(),
+    };
+
+    //traversing upwards
+    props.onAddExpenseData(expenseObj);
+  };
+  return (
+    <div className="expense-input">
+      <ExpenseForm onSaveExpenseData={saveExpenseDataHandler} />
+    </div>
+  );
 }
 
 export default ExpenseInput;
