@@ -5,3 +5,10 @@
     border-radius: 16px;
     background-color: #303030;
 }
+
+.no-expenses{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
