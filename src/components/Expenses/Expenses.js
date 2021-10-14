@@ -22,29 +22,34 @@ function Expenses(props) {
     }
   });
 
+  //checking whether filteredExpenses has elements present or not
+  //default expense content
+  let expenseContent = <p className="no-expenses">Oops ! No Entry Found</p>;
+
+  //if values present in filteredExpenses
+  //  if filtered expenses array contains element , print it into dom
+  // .map takes a function which is repeated for all elements in array
+  // ***important .map must return something
+  if (filteredExpenses.length > 0) {
+    expenseContent = filteredExpenses.map((elem) => {
+      return(
+        <ExpenseItem
+        key={elem.id}
+        title={elem.title}
+        amount={elem.amount}
+        date={elem.date}
+      />
+      );
+    });
+  }
+
   return (
     <div className="expenses">
       <ExpenseFilter
         selected={filteredYear}
         onChangeFilter={filterYearHandler}
       />
-      {/* if filtered expenses array does not have any elements , print error msg  */}
-      {filteredExpenses.length === 0 && (
-        <p className="no-expenses">Oops ! No Entry Found</p>
-        )}
-      {/* if filtered expenses array contains element , print it into dom */}
-      {/* .map takes a function which is repeated for all elements in array */}
-      {filteredExpenses.length > 0 &&
-        filteredExpenses.map((elem) => {
-          return (
-            <ExpenseItem
-              key={elem.id}
-              title={elem.title}
-              amount={elem.amount}
-              date={elem.date}
-            />
-          );
-        })}
+      {expenseContent}
     </div>
   );
 }

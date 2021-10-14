@@ -34,9 +34,9 @@ function ExpenseForm(props) {
     props.onSaveExpenseData(expenseData);
 
     //clearing input fields
-    setEnteredTitle('');
-    setEnteredAmount('');
-    setEnteredDate('');
+    setEnteredTitle("");
+    setEnteredAmount("");
+    setEnteredDate("");
   }
 
   //attaching change in state listeners in JSX
@@ -80,8 +80,11 @@ function ExpenseForm(props) {
             onChange={changeDateHandler}
           />
         </div>
-        <button type="submit" className="add-title-btn">
-          Add Title
+        <button type="button" className="cancel" onClick={props.onCancel}>
+          Cancel
+        </button>
+        <button type="submit" className="add-expense-btn">
+          Add Expense
         </button>
       </form>
     </div>
