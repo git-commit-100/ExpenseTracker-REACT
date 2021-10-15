@@ -1,0 +1,8 @@
+.expense-chart{
+    background-color: #E0B0FF;
+    height: 8rem;
+    width: 100%;
+    border-radius: 16px;
+    padding: 1rem .5rem 2rem .5rem;
+    margin-left: -.5rem;
+}

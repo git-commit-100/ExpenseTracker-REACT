@@ -1,0 +1,23 @@
+.chart-bar{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.chart-bar-inner{
+    background-color: white;
+    border-radius: 8px;
+    height: 100%;
+    width: .75rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.chart-bar-fill{
+    background-color: #4B0082;
+    width: 100%;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 0;
+    transition: all .5s ease-in-out;
+  }
