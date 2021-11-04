@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ExpenseTracker-REACT/static/css/main.9c42294a.chunk.css",
+    "main.js": "/ExpenseTracker-REACT/static/js/main.20a8771a.chunk.js",
+    "main.js.map": "/ExpenseTracker-REACT/static/js/main.20a8771a.chunk.js.map",
+    "runtime-main.js": "/ExpenseTracker-REACT/static/js/runtime-main.c3fcbd5f.js",
+    "runtime-main.js.map": "/ExpenseTracker-REACT/static/js/runtime-main.c3fcbd5f.js.map",
+    "static/js/2.1e302233.chunk.js": "/ExpenseTracker-REACT/static/js/2.1e302233.chunk.js",
+    "static/js/2.1e302233.chunk.js.map": "/ExpenseTracker-REACT/static/js/2.1e302233.chunk.js.map",
+    "static/js/3.b2b7d1a2.chunk.js": "/ExpenseTracker-REACT/static/js/3.b2b7d1a2.chunk.js",
+    "static/js/3.b2b7d1a2.chunk.js.map": "/ExpenseTracker-REACT/static/js/3.b2b7d1a2.chunk.js.map",
+    "index.html": "/ExpenseTracker-REACT/index.html",
+    "static/css/main.9c42294a.chunk.css.map": "/ExpenseTracker-REACT/static/css/main.9c42294a.chunk.css.map",
+    "static/js/2.1e302233.chunk.js.LICENSE.txt": "/ExpenseTracker-REACT/static/js/2.1e302233.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c3fcbd5f.js",
+    "static/js/2.1e302233.chunk.js",
+    "static/css/main.9c42294a.chunk.css",
+    "static/js/main.20a8771a.chunk.js"
+  ]
+}
